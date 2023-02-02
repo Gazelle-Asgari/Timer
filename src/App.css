@@ -1,0 +1,78 @@
+:root {
+    --change: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    --reset: linear-gradient(to bottom right, #e6052e, #e94f18);
+    --pause: linear-gradient(to bottom right, #db19b7, #c85aff);
+    --start: linear-gradient(to bottom right, #508b3f, #55b926);
+    --restart: linear-gradient(to bottom right, #efd647, #FF9A5A);
+  }
+
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.box{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+}
+
+.box__content{
+    font-size: 350px;
+    color: #ffffffcb;
+}
+
+button{
+    width: 150px;
+    margin: 10px;
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.box__button--change {
+    background: var(--change);
+}
+
+.box__button--reset{
+    background: var(--reset);
+}
+
+.box__button--pause{
+    background: var(--pause);
+}
+
+.box__button--start{
+    background: var(--start);
+}
+
+.box__button--restart{
+    background: var(--restart);
+}
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
